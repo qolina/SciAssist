@@ -10,8 +10,9 @@ For a new task, the most important things are the dataset and the model to be us
 To prepare your dataset
 """""""""""""""""""""""
 
-Basically, you can create a **DataModule** in [src/datamodules/](src/datamodules/) to prepare your dataloader.
-For example, we have [cora_datamodule.py](src/datamodules/cora_datamodule.py) for Cora dataset.
+Basically, you can create a **DataModule** in ``src/datamodules/`` to prepare your dataloader.
+For example, we have ``cora_datamodule.py`` for Cora dataset.
+In ``datamodules/components``, you can save some fixed properties such as the label set.
 
 A **DataModule** standardizes the training, val, test splits, data preparation and transforms.
 A datamodule looks like this:
@@ -43,9 +44,6 @@ A datamodule looks like this:
             # called on every process in DDP
 
 They are actually hook functions, so you can simply overwrite them as you like.
-
-In ``datamodules/components``, you can save some fixed properties such as the label set.
-
 There should be some customed functions for preprocessing which can be shared in several tasks. For example, the procedures for tokenization and padding of different sequence labeling tasks remain consistent. It will be good if you define them as an utility in [src/utils](src/utils), which may facilitates others' work.
 
 Then, create a ``.yaml`` in ``configs/datamodule`` to instantiate your datamodule.
@@ -182,6 +180,7 @@ And then you can create a Pytorch lightning Trainer to manage the whole training
 
 
 Finally, you can choose your config files and train your model with the command line:
+
 .. code-block:: bash
 
     python train.py trainer=gpu datamodule=dataconfig model=modelconfig
