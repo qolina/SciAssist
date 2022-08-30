@@ -134,7 +134,7 @@ To create a Trainer and train
 """""""""""""""""""""""""""""
 .. note::
 
-    Actually there have been a perfect ``train_pipeline.py`` in our project, so there's no need to write a train pipeline yourself.To prepare the LightningDataModule** and **LightningModule** is all you need to do.
+    Actually there have been a perfect ``train_pipeline.py`` in our project, so there's no need to write a train pipeline yourself. To prepare the **LightningDataModule** and **LightningModule** is all you need to do.
     But here's an introduction to this procedure in case of any unknown problem.
 
 The last step before starting training is to prepare a trainer config:
