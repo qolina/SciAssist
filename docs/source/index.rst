@@ -1,13 +1,10 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to SciAssist's documentation!
+=====================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**SciAssist** is a toolkit to assist scientists' research. SciAssist currently supports reference string parsing, more functions are under active development by `WING@NUS <https://wing.comp.nus.edu.sg/>`_, Singapore. The project was built upon an open-sourced `template by ashleve <https://github.com/ashleve/lightning-hydra-template>`_.
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+how to use the tool.
 
 .. note::
 
@@ -18,5 +15,6 @@ Contents
 
 .. toctree::
 
+   installation
    usage
-   api
+   development
