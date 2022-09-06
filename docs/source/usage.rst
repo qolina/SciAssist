@@ -19,8 +19,8 @@ To parse reference strings from **a PDF file**, try:
 
 This will generate a text file of reference strings in the specified ``output_dir``.
 And the JSON format of the origin PDF will be saved in the specified ``temp_dir``.
-The default ``output_dir`` is ``result/`` from your path
-and the default ``temp_dir`` is ``temp/`` from your path.
+The default ``output_dir`` is ``output/result/`` from your path
+and the default ``temp_dir`` is ``output/.temp/`` from your path.
 
 The output ``results`` is a list of tagged strings, which seems like:
 
@@ -76,7 +76,7 @@ To do summarization for a **a PDF file**, try:
 
 This will generate a text file of bodytext of the input pdf in the specified ``output_dir``.
 And the JSON format of the origin PDF will be saved in the specified ``temp_dir``.
-The default ``output_dir`` is ``result/`` from your path and the default ``temp_dir`` is ``temp/`` from your path.
+The default ``output_dir`` is ``output/result/`` from your path and the default ``temp_dir`` is ``output/.temp/`` from your path.
 The output includes the source text ``text`` and the predicted summary ``summ``.
 
 Summarize a TEXT or a string
